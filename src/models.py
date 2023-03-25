@@ -62,8 +62,8 @@ class Favorite(Base):
     planet = relationship(Planeta)
     car_id = Column(Integer,ForeignKey('vehiculo.id'))
     car = relationship(Vehiculo)
-    user_id = Column(Integer,ForeignKey('user.id'))
-    user = relationship(User)
+    user_id = Column(Integer,ForeignKey('user.id')) #CON FOREING KEY  relacionamos los datos entre las tablas 
+    user = relationship(User)  # despues de hacer la foreing key y relacionarlo se tiene que hacer esta parte para relacionar no solo los datos sino tambien las tablas entre si 
     
 
  
